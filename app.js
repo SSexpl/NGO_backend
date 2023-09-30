@@ -18,6 +18,10 @@ const User=require('./models/user');
 const EventList=require('./models/event_list');// stores the userid and the event id..
 //const user = require('./models/user');
 // gets all the events from the databse
+app.get('/',(req,res)=>
+{
+  res.send("Success up and running");
+})
 app.get('/events',async(req,res)=>//async response function
 {
   //console.log("i am up at 5000");
